@@ -1,0 +1,4 @@
+/* lowercase alias so the stylesheet is available at /main.css
+   It imports the existing Main.css (keeps a single source of truth).
+*/
+@import url("/Main.css");
