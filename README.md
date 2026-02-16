@@ -49,4 +49,19 @@ If you want, I can also:
 - add a short visual preview screenshot (if you provide one), or
 - convert key class names into a smaller reference table.
 
+**Published URL (GitHub Pages)**
+
+You can import the stylesheet directly from the Pages site:
+
+```html
+<link rel="stylesheet" href="https://hropiberhtaz.github.io/main.css">
+```
+
+Or via CSS import:
+
+```css
+@import url("https://hropiberhtaz.github.io/main.css");
+```
+
+
 
