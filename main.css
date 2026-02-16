@@ -3866,6 +3866,114 @@ code {
     display: none
 }
 
+/* Window controls as colored dots */
+.winButtonClose__421ed,
+.winButtonMinMax__421ed,
+.winButton__421ed,
+.winButtonClose__0d7c6,
+.winButtonMinMax__0d7c6,
+.winButton__0d7c6,
+.winButtonClose_d40c56,
+.winButtonMinMax_d40c56,
+.winButton_d40c56 {
+    background: transparent !important;
+    border: none !important;
+    transition: all 0.2s ease !important;
+}
+
+/* Close button - Red dot */
+.winButtonClose__421ed,
+.winButtonClose__0d7c6,
+.winButtonClose_d40c56 {
+    background: #ff5f56 !important;
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+    margin: auto 4px !important;
+}
+
+.winButtonClose__421ed:hover,
+.winButtonClose__0d7c6:hover,
+.winButtonClose_d40c56:hover {
+    background: #ff5f56 !important;
+    filter: brightness(0.8) !important;
+    transform: scale(1.1) !important;
+}
+
+/* Minimize button - Yellow dot */
+.winButtonMinMax__421ed[aria-label="Minimize"],
+.winButtonMinMax__0d7c6[aria-label="Minimize"],
+.winButtonMinMax_d40c56[aria-label="Minimize"] {
+    background: #ffbd2e !important;
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+    margin: auto 4px !important;
+}
+
+.winButtonMinMax__421ed[aria-label="Minimize"]:hover,
+.winButtonMinMax__0d7c6[aria-label="Minimize"]:hover,
+.winButtonMinMax_d40c56[aria-label="Minimize"]:hover {
+    background: #ffbd2e !important;
+    filter: brightness(0.8) !important;
+    transform: scale(1.1) !important;
+}
+
+/* Maximize button - Green dot */
+.winButtonMinMax__421ed[aria-label="Maximize"],
+.winButtonMinMax__421ed[aria-label="最大化"],
+.winButtonMinMax__0d7c6[aria-label="Maximize"],
+.winButtonMinMax__0d7c6[aria-label="最大化"],
+.winButtonMinMax_d40c56[aria-label="Maximize"],
+.winButtonMinMax_d40c56[aria-label="最大化"] {
+    background: #27c93f !important;
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+    margin: auto 4px !important;
+}
+
+.winButtonMinMax__421ed[aria-label="Maximize"]:hover,
+.winButtonMinMax__421ed[aria-label="最大化"]:hover,
+.winButtonMinMax__0d7c6[aria-label="Maximize"]:hover,
+.winButtonMinMax__0d7c6[aria-label="最大化"]:hover,
+.winButtonMinMax_d40c56[aria-label="Maximize"]:hover,
+.winButtonMinMax_d40c56[aria-label="最大化"]:hover {
+    background: #27c93f !important;
+    filter: brightness(0.8) !important;
+    transform: scale(1.1) !important;
+}
+
+/* Hide the default icons */
+.winButtonClose__421ed svg,
+.winButtonMinMax__421ed svg,
+.winButton__421ed svg,
+.winButtonClose__0d7c6 svg,
+.winButtonMinMax__0d7c6 svg,
+.winButton__0d7c6 svg,
+.winButtonClose_d40c56 svg,
+.winButtonMinMax_d40c56 svg,
+.winButton_d40c56 svg {
+    display: none !important;
+}
+
+/* Container styling for the window controls */
+.winButtons__421ed,
+.winButtons__0d7c6,
+.winButtons_d40c56 {
+    display: flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+    padding: 0 8px !important;
+}
+
+/* Remove any backgrounds/hover effects from the container */
+.winButtons__421ed:hover,
+.winButtons__0d7c6:hover,
+.winButtons_d40c56:hover {
+    background: transparent !important;
+}
+
 :is(.theme-light, .theme-dark, .theme-darker, .theme-midnight),
 :is(.theme-light, .theme-dark, .theme-darker, .theme-midnight):is(.theme-light, .theme-dark) {
     --text-default: hsl(from var(--normal-text) h calc(var(--saturation-factor, 1) * s) l/alpha);
