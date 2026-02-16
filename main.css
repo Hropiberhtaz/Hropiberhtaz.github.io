@@ -3877,15 +3877,15 @@ code {
 
 /* Close button - Red dot */
 [class*="winButtonClose"] {
-    background: #ff5f56 !important;
-    width: 12px !important;
-    height: 12px !important;
+    background: #f38ba8 !important;
+    width: 13px !important;
+    height: 13px !important;
     border-radius: 50% !important;
     margin: auto 4px !important;
 }
 
 [class*="winButtonClose"]:hover {
-    background: #ff5f56 !important;
+    background: #f38ba8 !important;
     filter: brightness(0.8) !important;
     transform: scale(1.1) !important;
 }
@@ -3893,16 +3893,16 @@ code {
 /* Minimize button - Yellow dot */
 [class*="winButtonMinMax"][aria-label*="Minimize"],
 [class*="winButton"][aria-label*="Minimize"] {
-    background: #ffbd2e !important;
-    width: 12px !important;
-    height: 12px !important;
+    background: #f9e2af !important;
+    width: 13px !important;
+    height: 13px !important;
     border-radius: 50% !important;
     margin: auto 4px !important;
 }
 
 [class*="winButtonMinMax"][aria-label*="Minimize"]:hover,
 [class*="winButton"][aria-label*="Minimize"]:hover {
-    background: #ffbd2e !important;
+    background: #f9e2af !important;
     filter: brightness(0.8) !important;
     transform: scale(1.1) !important;
 }
@@ -3912,9 +3912,9 @@ code {
 [class*="winButtonMinMax"][aria-label*="最大化"],
 [class*="winButton"][aria-label*="Maximize"],
 [class*="winButton"][aria-label*="最大化"] {
-    background: #27c93f !important;
-    width: 12px !important;
-    height: 12px !important;
+    background: #a6e3a1 !important;
+    width: 13px !important;
+    height: 13px !important;
     border-radius: 50% !important;
     margin: auto 4px !important;
 }
@@ -3923,7 +3923,7 @@ code {
 [class*="winButtonMinMax"][aria-label*="最大化"]:hover,
 [class*="winButton"][aria-label*="Maximize"]:hover,
 [class*="winButton"][aria-label*="最大化"]:hover {
-    background: #27c93f !important;
+    background: #a6e3a1 !important;
     filter: brightness(0.8) !important;
     transform: scale(1.1) !important;
 }
@@ -3939,7 +3939,7 @@ code {
 [class*="winButtons"] {
     display: flex !important;
     align-items: center !important;
-    gap: 4px !important;
+    gap: 6px !important;
     padding: 0 8px !important;
 }
 
@@ -3950,23 +3950,23 @@ code {
 
 /* Also try targeting by position if the above doesn't work */
 .withFrame__421ed [class*="winButton"]:nth-child(1) { /* Close */
-    background: #ff5f56 !important;
-    width: 12px !important;
-    height: 12px !important;
+    background: #f38ba8 !important;
+    width: 13px !important;
+    height: 13px !important;
     border-radius: 50% !important;
 }
 
 .withFrame__421ed [class*="winButton"]:nth-child(2) { /* Minimize */
-    background: #ffbd2e !important;
-    width: 12px !important;
-    height: 12px !important;
+    background: #f9e2af !important;
+    width: 13px !important;
+    height: 13px !important;
     border-radius: 50% !important;
 }
 
 .withFrame__421ed [class*="winButton"]:nth-child(3) { /* Maximize */
-    background: #27c93f !important;
-    width: 12px !important;
-    height: 12px !important;
+    background: #a6e3a1 !important;
+    width: 13px !important;
+    height: 13px !important;
     border-radius: 50% !important;
 }
 
