@@ -3877,7 +3877,7 @@ code {
 
 /* Close button - Red dot */
 [class*="winButtonClose"] {
-    background: #FFE0D9 !important;
+    background: #ff6870 !important;
     width: 13px !important;
     height: 13px !important;
     border-radius: 50% !important;
@@ -3885,7 +3885,7 @@ code {
 }
 
 [class*="winButtonClose"]:hover {
-    background: #FFE0D9 !important;
+    background: #ff6870 !important;
     filter: brightness(0.8) !important;
     transform: scale(1.1) !important;
 }
@@ -3950,7 +3950,7 @@ code {
 
 /* Also try targeting by position if the above doesn't work */
 .withFrame__421ed [class*="winButton"]:nth-child(1) { /* Close */
-    background: #FFE0D9 !important;
+    background: #ff6870 !important;
     width: 13px !important;
     height: 13px !important;
     border-radius: 50% !important;
