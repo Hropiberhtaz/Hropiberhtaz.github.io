@@ -34,7 +34,7 @@
     margin-left: 10px;
     font-size: 16px;
     font-weight: 600;
-    color: #01824a;
+    color: #04ef89;
     order: 2
 }
 
@@ -3877,7 +3877,7 @@ code {
 
 /* Close button - Red dot */
 [class*="winButtonClose"] {
-    background: #f38ba8 !important;
+    background: #c14428 !important;
     width: 13px !important;
     height: 13px !important;
     border-radius: 50% !important;
@@ -3885,7 +3885,7 @@ code {
 }
 
 [class*="winButtonClose"]:hover {
-    background: #f38ba8 !important;
+    background: #c14428 !important;
     filter: brightness(0.8) !important;
     transform: scale(1.1) !important;
 }
@@ -3893,7 +3893,7 @@ code {
 /* Minimize button - Yellow dot */
 [class*="winButtonMinMax"][aria-label*="Minimize"],
 [class*="winButton"][aria-label*="Minimize"] {
-    background: #f9e2af !important;
+    background: #eb9524 !important;
     width: 13px !important;
     height: 13px !important;
     border-radius: 50% !important;
@@ -3902,7 +3902,7 @@ code {
 
 [class*="winButtonMinMax"][aria-label*="Minimize"]:hover,
 [class*="winButton"][aria-label*="Minimize"]:hover {
-    background: #f9e2af !important;
+    background: #eb9524 !important;
     filter: brightness(0.8) !important;
     transform: scale(1.1) !important;
 }
@@ -3912,7 +3912,7 @@ code {
 [class*="winButtonMinMax"][aria-label*="最大化"],
 [class*="winButton"][aria-label*="Maximize"],
 [class*="winButton"][aria-label*="最大化"] {
-    background: #a6e3a1 !important;
+    background: #b56a4a !important;
     width: 13px !important;
     height: 13px !important;
     border-radius: 50% !important;
@@ -3923,7 +3923,7 @@ code {
 [class*="winButtonMinMax"][aria-label*="最大化"]:hover,
 [class*="winButton"][aria-label*="Maximize"]:hover,
 [class*="winButton"][aria-label*="最大化"]:hover {
-    background: #a6e3a1 !important;
+    background: #b56a4a !important;
     filter: brightness(0.8) !important;
     transform: scale(1.1) !important;
 }
@@ -3950,21 +3950,21 @@ code {
 
 /* Also try targeting by position if the above doesn't work */
 .withFrame__421ed [class*="winButton"]:nth-child(1) { /* Close */
-    background: #f38ba8 !important;
+    background: #c14428 !important;
     width: 13px !important;
     height: 13px !important;
     border-radius: 50% !important;
 }
 
 .withFrame__421ed [class*="winButton"]:nth-child(2) { /* Minimize */
-    background: #f9e2af !important;
+    background: #eb9524 !important;
     width: 13px !important;
     height: 13px !important;
     border-radius: 50% !important;
 }
 
 .withFrame__421ed [class*="winButton"]:nth-child(3) { /* Maximize */
-    background: #a6e3a1 !important;
+    background: #b56a4a !important;
     width: 13px !important;
     height: 13px !important;
     border-radius: 50% !important;
