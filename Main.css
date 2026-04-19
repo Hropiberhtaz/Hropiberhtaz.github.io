@@ -3867,9 +3867,9 @@ code {
 }
 
 /* ── Universal close button → red dot ── */
-[class*="closeButton"],
-[class*="close-button"],
-[class*="winButtonClose"],
+button[class*="closeButton"],
+button[class*="close-button"],
+button[class*="winButtonClose"],
 button[aria-label="Close"],
 button[aria-label="close"] {
     all: unset !important;
@@ -3887,17 +3887,17 @@ button[aria-label="close"] {
     pointer-events: inherit !important;
 }
 
-[class*="closeButton"] svg,
-[class*="close-button"] svg,
-[class*="winButtonClose"] svg,
+button[class*="closeButton"] svg,
+button[class*="close-button"] svg,
+button[class*="winButtonClose"] svg,
 button[aria-label="Close"] svg,
 button[aria-label="close"] svg {
     display: none !important;
 }
 
-[class*="closeButton"]:hover,
-[class*="close-button"]:hover,
-[class*="winButtonClose"]:hover,
+button[class*="closeButton"]:hover,
+button[class*="close-button"]:hover,
+button[class*="winButtonClose"]:hover,
 button[aria-label="Close"]:hover,
 button[aria-label="close"]:hover {
     filter: brightness(0.8) !important;
