@@ -3905,10 +3905,9 @@ button[aria-label="close"]:hover {
 }
 
 /* ── Universal yellow dot ── */
-[class*="yellowButton"],
-button[aria-label*="Minimize"],
-[class*="winButton"][aria-label*="Minimize"],
-[class*="winButtonMinMax"][aria-label*="Minimize"] {
+button[class*="winButton"][aria-label*="Minimize"],
+button[class*="winButtonMinMax"][aria-label*="Minimize"],
+button[aria-label="Minimize"] {
     all: unset !important;
     width: 13px !important;
     height: 13px !important;
@@ -3924,32 +3923,25 @@ button[aria-label*="Minimize"],
     pointer-events: inherit !important;
 }
 
-[class*="yellowButton"] svg,
-button[aria-label*="Minimize"] svg,
-[class*="winButton"][aria-label*="Minimize"] svg,
-[class*="winButtonMinMax"][aria-label*="Minimize"] svg {
+button[class*="winButton"][aria-label*="Minimize"] svg,
+button[class*="winButtonMinMax"][aria-label*="Minimize"] svg,
+button[aria-label="Minimize"] svg {
     display: none !important;
 }
 
-[class*="yellowButton"]:hover,
-button[aria-label*="Minimize"]:hover,
-[class*="winButton"][aria-label*="Minimize"]:hover,
-[class*="winButtonMinMax"][aria-label*="Minimize"]:hover {
+button[class*="winButton"][aria-label*="Minimize"]:hover,
+button[class*="winButtonMinMax"][aria-label*="Minimize"]:hover,
+button[aria-label="Minimize"]:hover {
     filter: brightness(0.8) !important;
     transform: scale(1.1) !important;
 }
 
 /* ── Universal green dot ── */
-[class*="greenButton"],
-button[aria-label*="Maximize"],
-[class*="winButton"][aria-label*="Maximize"],
-[class*="winButtonMinMax"][aria-label*="Maximize"],
-[class*="winButton"][aria-label*="最大化"],
-[class*="winButtonMinMax"][aria-label*="最大化"],
-button[aria-label*="Accept"],
-button[aria-label*="accept"],
-[class*="acceptButton"],
-[class*="accept-button"] {
+button[class*="winButton"][aria-label*="Maximize"],
+button[class*="winButtonMinMax"][aria-label*="Maximize"],
+button[aria-label="Maximize"],
+button[class*="winButton"][aria-label*="最大化"],
+button[class*="winButtonMinMax"][aria-label*="最大化"] {
     all: unset !important;
     width: 13px !important;
     height: 13px !important;
@@ -3965,29 +3957,19 @@ button[aria-label*="accept"],
     pointer-events: inherit !important;
 }
 
-[class*="greenButton"] svg,
-button[aria-label*="Maximize"] svg,
-[class*="winButton"][aria-label*="Maximize"] svg,
-[class*="winButtonMinMax"][aria-label*="Maximize"] svg,
-[class*="winButton"][aria-label*="最大化"] svg,
-[class*="winButtonMinMax"][aria-label*="最大化"] svg,
-button[aria-label*="Accept"] svg,
-button[aria-label*="accept"] svg,
-[class*="acceptButton"] svg,
-[class*="accept-button"] svg {
+button[class*="winButton"][aria-label*="Maximize"] svg,
+button[class*="winButtonMinMax"][aria-label*="Maximize"] svg,
+button[aria-label="Maximize"] svg,
+button[class*="winButton"][aria-label*="最大化"] svg,
+button[class*="winButtonMinMax"][aria-label*="最大化"] svg {
     display: none !important;
 }
 
-[class*="greenButton"]:hover,
-button[aria-label*="Maximize"]:hover,
-[class*="winButton"][aria-label*="Maximize"]:hover,
-[class*="winButtonMinMax"][aria-label*="Maximize"]:hover,
-[class*="winButton"][aria-label*="最大化"]:hover,
-[class*="winButtonMinMax"][aria-label*="最大化"]:hover,
-button[aria-label*="Accept"]:hover,
-button[aria-label*="accept"]:hover,
-[class*="acceptButton"]:hover,
-[class*="accept-button"]:hover {
+button[class*="winButton"][aria-label*="Maximize"]:hover,
+button[class*="winButtonMinMax"][aria-label*="Maximize"]:hover,
+button[aria-label="Maximize"]:hover,
+button[class*="winButton"][aria-label*="最大化"]:hover,
+button[class*="winButtonMinMax"][aria-label*="最大化"]:hover {
     filter: brightness(0.8) !important;
     transform: scale(1.1) !important;
 }
