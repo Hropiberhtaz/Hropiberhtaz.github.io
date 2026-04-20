@@ -3984,20 +3984,16 @@ button[class*="winButtonMinMax"][aria-label*="最大化"]:hover {
 }
 
 /* ── DM dots only show on hover ── */
-[class*="unreadMentionsIndicator"],
-[class*="mentionsBadge"],
-[class*="totalMentionCount"],
-[class*="numberBadge"],
-[class*="textBadge"] {
+.privateChannels_e6b769 [class*="numberBadge"],
+.privateChannels_e6b769 [class*="textBadge"] {
     opacity: 0 !important;
     transition: opacity .2s ease !important;
 }
 
-[class*="interactive"]:hover [class*="unreadMentionsIndicator"],
-[class*="interactive"]:hover [class*="mentionsBadge"],
-[class*="interactive"]:hover [class*="totalMentionCount"],
-[class*="interactive"]:hover [class*="numberBadge"],
-[class*="interactive"]:hover [class*="textBadge"] {
+.privateChannels_e6b769 li:hover [class*="numberBadge"],
+.privateChannels_e6b769 li:hover [class*="textBadge"],
+.privateChannels_e6b769 [class*="channel"]:hover [class*="numberBadge"],
+.privateChannels_e6b769 [class*="channel"]:hover [class*="textBadge"] {
     opacity: 1 !important;
 }
 
