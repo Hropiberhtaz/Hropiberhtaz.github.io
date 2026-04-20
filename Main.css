@@ -1,4 +1,4 @@
-keyframes cv-channel-select {
+@keyframes cv-channel-select {
     from {
         right: 100%
     }
@@ -3866,139 +3866,108 @@ code {
     display: none
 }
 
-/* ── Universal close button → red dot ── */
-button[class*="closeButton"],
-button[class*="close-button"],
-button[class*="winButtonClose"],
-button[aria-label="Close"],
-button[aria-label="close"] {
-    all: unset !important;
-    width: 13px !important;
-    height: 13px !important;
-    min-width: 13px !important;
-    border-radius: 50% !important;
+/* Window controls as colored dots - Universal selector */
+[class*="winButtonClose"],
+[class*="winButtonMinMax"],
+[class*="winButton"] {
+    background: transparent !important;
+    border: none !important;
+    transition: all 0.2s ease !important;
+}
+
+/* Close button - Red dot */
+[class*="winButtonClose"] {
     background: #ff6870 !important;
-    display: inline-flex !important;
-    cursor: pointer !important;
-    flex-shrink: 0 !important;
-    transition: filter .2s ease, transform .2s ease !important;
-    visibility: inherit !important;
-    opacity: inherit !important;
-    pointer-events: inherit !important;
-}
-
-button[class*="closeButton"] svg,
-button[class*="close-button"] svg,
-button[class*="winButtonClose"] svg,
-button[aria-label="Close"] svg,
-button[aria-label="close"] svg {
-    display: none !important;
-}
-
-button[class*="closeButton"]:hover,
-button[class*="close-button"]:hover,
-button[class*="winButtonClose"]:hover,
-button[aria-label="Close"]:hover,
-button[aria-label="close"]:hover {
-    filter: brightness(0.8) !important;
-    transform: scale(1.1) !important;
-}
-
-/* ── Universal yellow dot ── */
-button[class*="winButton"][aria-label*="Minimize"],
-button[class*="winButtonMinMax"][aria-label*="Minimize"],
-button[aria-label="Minimize"] {
-    all: unset !important;
     width: 13px !important;
     height: 13px !important;
-    min-width: 13px !important;
     border-radius: 50% !important;
-    background: #ffbd2e !important;
-    display: inline-flex !important;
-    cursor: pointer !important;
-    flex-shrink: 0 !important;
-    transition: filter .2s ease, transform .2s ease !important;
-    visibility: inherit !important;
-    opacity: inherit !important;
-    pointer-events: inherit !important;
+    margin: auto 4px !important;
 }
 
-button[class*="winButton"][aria-label*="Minimize"] svg,
-button[class*="winButtonMinMax"][aria-label*="Minimize"] svg,
-button[aria-label="Minimize"] svg {
-    display: none !important;
-}
-
-button[class*="winButton"][aria-label*="Minimize"]:hover,
-button[class*="winButtonMinMax"][aria-label*="Minimize"]:hover,
-button[aria-label="Minimize"]:hover {
+[class*="winButtonClose"]:hover {
+    background: #ff6870 !important;
     filter: brightness(0.8) !important;
     transform: scale(1.1) !important;
 }
 
-/* ── Universal green dot ── */
-button[class*="winButton"][aria-label*="Maximize"],
-button[class*="winButtonMinMax"][aria-label*="Maximize"],
-button[aria-label="Maximize"],
-button[class*="winButton"][aria-label*="最大化"],
-button[class*="winButtonMinMax"][aria-label*="最大化"] {
-    all: unset !important;
+/* Minimize button - Yellow dot */
+[class*="winButtonMinMax"][aria-label*="Minimize"],
+[class*="winButton"][aria-label*="Minimize"] {
+    background: #FFE5D9 !important;
     width: 13px !important;
     height: 13px !important;
-    min-width: 13px !important;
     border-radius: 50% !important;
-    background: #28c941 !important;
-    display: inline-flex !important;
-    cursor: pointer !important;
-    flex-shrink: 0 !important;
-    transition: filter .2s ease, transform .2s ease !important;
-    visibility: inherit !important;
-    opacity: inherit !important;
-    pointer-events: inherit !important;
+    margin: auto 4px !important;
 }
 
-button[class*="winButton"][aria-label*="Maximize"] svg,
-button[class*="winButtonMinMax"][aria-label*="Maximize"] svg,
-button[aria-label="Maximize"] svg,
-button[class*="winButton"][aria-label*="最大化"] svg,
-button[class*="winButtonMinMax"][aria-label*="最大化"] svg {
-    display: none !important;
-}
-
-button[class*="winButton"][aria-label*="Maximize"]:hover,
-button[class*="winButtonMinMax"][aria-label*="Maximize"]:hover,
-button[aria-label="Maximize"]:hover,
-button[class*="winButton"][aria-label*="最大化"]:hover,
-button[class*="winButtonMinMax"][aria-label*="最大化"]:hover {
+[class*="winButtonMinMax"][aria-label*="Minimize"]:hover,
+[class*="winButton"][aria-label*="Minimize"]:hover {
+    background: #FFE5D9 !important;
     filter: brightness(0.8) !important;
     transform: scale(1.1) !important;
 }
 
-/* ── Window controls container ── */
+/* Maximize button - Green dot */
+[class*="winButtonMinMax"][aria-label*="Maximize"],
+[class*="winButtonMinMax"][aria-label*="最大化"],
+[class*="winButton"][aria-label*="Maximize"],
+[class*="winButton"][aria-label*="最大化"] {
+    background: #6BB59A !important;
+    width: 13px !important;
+    height: 13px !important;
+    border-radius: 50% !important;
+    margin: auto 4px !important;
+}
+
+[class*="winButtonMinMax"][aria-label*="Maximize"]:hover,
+[class*="winButtonMinMax"][aria-label*="最大化"]:hover,
+[class*="winButton"][aria-label*="Maximize"]:hover,
+[class*="winButton"][aria-label*="最大化"]:hover {
+    background: #6BB59A !important;
+    filter: brightness(0.8) !important;
+    transform: scale(1.1) !important;
+}
+
+/* Hide the default icons */
+[class*="winButtonClose"] svg,
+[class*="winButtonMinMax"] svg,
+[class*="winButton"] svg {
+    display: none !important;
+}
+
+/* Container styling for the window controls */
 [class*="winButtons"] {
     display: flex !important;
     align-items: center !important;
     gap: 6px !important;
     padding: 0 8px !important;
+}
+
+/* Remove any backgrounds/hover effects from the container */
+[class*="winButtons"]:hover {
     background: transparent !important;
 }
 
-/* ── DM dots only show on hover ── */
-[class*="unreadMentionsIndicator"],
-[class*="mentionsBadge"],
-[class*="totalMentionCount"],
-[class*="numberBadge"],
-[class*="textBadge"] {
-    opacity: 0 !important;
-    transition: opacity .2s ease !important;
+/* Also try targeting by position if the above doesn't work */
+.withFrame__421ed [class*="winButton"]:nth-child(1) { /* Close */
+    background: #ff6870 !important;
+    width: 13px !important;
+    height: 13px !important;
+    border-radius: 50% !important;
 }
 
-[class*="interactive"]:hover [class*="unreadMentionsIndicator"],
-[class*="interactive"]:hover [class*="mentionsBadge"],
-[class*="interactive"]:hover [class*="totalMentionCount"],
-[class*="interactive"]:hover [class*="numberBadge"],
-[class*="interactive"]:hover [class*="textBadge"] {
-    opacity: 1 !important;
+.withFrame__421ed [class*="winButton"]:nth-child(2) { /* Minimize */
+    background: #FFE5D9 !important;
+    width: 13px !important;
+    height: 13px !important;
+    border-radius: 50% !important;
+}
+
+.withFrame__421ed [class*="winButton"]:nth-child(3) { /* Maximize */
+    background: #6BB59A !important;
+    width: 13px !important;
+    height: 13px !important;
+    border-radius: 50% !important;
 }
 
 :is(.theme-light, .theme-dark, .theme-darker, .theme-midnight),
